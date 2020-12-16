@@ -1,4 +1,4 @@
-
+# SPAM CLASSIFIER
 The goal is to classify the message as spam or non-spam using multinomial Naive Bayes algorithm.
 To classify messages as spam or non-spam ,we follow these steps to achieve our goal:-
 
