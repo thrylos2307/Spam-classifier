@@ -18,12 +18,12 @@ Steps we follow:
 4. Create a column for each word in vocabulary with 0 as initialization value and append it to the original dataset and mark the frequency of each word occuring in a particular message. One can think of as what we do in [get_dummies()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.get_dummies.html).
 Our table would look something like this:
 
-| Label	| SMS	| 0	| 000pes	| 008704050406	| 0089	| zoe	| zogtorius	| zouk	| zyada	| 鈥 |
-| ---- |----|----|----|----|----|----	|----|-----|----|----|
-| ham | [yep, by, the, pretty, sculpture] | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| ham	| [yes, princess, are, you, going, to, make, me,...] | 0 | 0| 0 |  0 | 0 | 0 | 0 | 0 | 0 |
-| ham	| [welp, apparently, he, retired] | 0 |0 | 0  | 0 | 0 | 0 | 0 | 0 | 0 |
-| ham	| [havent] | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Label	| SMS	| 0	| 000pes	| 008704050406	| 0089	| ....|zoe	| zogtorius	| zouk	| zyada	| 鈥 |
+| ---- |----|----|----|----|----|----	|----|-----|----|----|----|
+| ham | [yep, by, the, pretty, sculpture] | 0 | 0 | 0 | 0 | ... |0 | 0 | 0 | 0 | 0 |
+| ham	| [yes, princess, are, you, going, to, make, me,...] | 0 | 0| 0 |  0 |...| 0 | 0 | 0 | 0 | 0 |
+| ham	| [welp, apparently, he, retired] | 0 |0 | 0  | 0 |...| 0 | 0 | 0 | 0 | 0 |
+| ham	| [havent] | 0 | 0 | 0 | 0 | ...|0 | 0 | 0 | 0 | 0 |
 
 5. Now we calculate the number of words in spam and non spam and find the frequency of each word in spam and non spam  in order to find the probability of each word given its belong to spam or non-spam message . The formula is given by:<br>
 * for probability of word belonging to spam message: &emsp;
